@@ -92,3 +92,21 @@ document.getElementById("demo16").innerHTML = value;
 
    
 //  Object
+ const person = {
+  firstName1: "john",
+  lastName1: "deo",
+  age: 33
+ };
+ document.getElementById("demo17").innerHTML = person.firstName1 + " is " + person.age + " year old. "
+
+ 
+ //store properties in function
+ const persn = {
+  firstName2: "jummy",
+  lastName2: "mart",
+  agee: 22,
+  fullName: function() {
+    return this.firstName2 + " " + this.lastName2;
+  }
+ };
+ document.getElementById("demo18").innerHTML = persn.fullName();
