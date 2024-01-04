@@ -1,4 +1,4 @@
-document.getElementById("demo2").innerHTML = "preeti i love u";
+document.getElementById("demo2").innerHTML = "preeti";
 // window.alert(3+4);
 // console.log(2+2);
 // window.print();
@@ -14,96 +14,81 @@ a=x*y;
 document.getElementById("demo3").innerHTML = "the value of you calculation " + (z + a);
 
 
-// write hello dollyn that is strings
-// document.getElementById('demo4').innerHTML = "hello dolly";
-// document.getElementById("demo5").innerHTML = "how are u?";
+/* write hello dolly that is strings
+document.getElementById('demo4').innerHTML = "hello dolly";
+document.getElementById("demo5").innerHTML = "how are u?"; */
 
 
 //arithmetic operator to compute value
-
 document.getElementById("demo6").innerHTML = (3*8)-3;
 
-// expressions
 
+// expressions
 document.getElementById("demo7").innerHTML = "john " + "deo";
 
-//change last name
 
+//change last name
 let lastname , lastName;
 lastname = "deo";
 lastName = "petor";
 document.getElementById("demo8").innerHTML = lastname;
 
+
 // constant value chnaged
-
 const car = ["vovle", "naino", "toyoto","bmw"];
-// chnage element
-
-car [1]= "cycle";
-// add element
-car.push ("bike")
- document.getElementById("demo9").innerHTML = car [4];
-
- // conts object
-
-  const caar = {type:"fait", model:"400", color:"white" } ;
-   
- // change color
- caar.color = "red";
+car [1]= "cycle"; // chnage element
+car.push ("bike") // add element
+document.getElementById("demo9").innerHTML = car [4];
 
 
- // add somthing
-
-caar.onwer = "poonam";
-
- document.getElementById("demo10").innerHTML = "car onwer is  " + 
- caar.onwer;
-
- // hoisting
+// That is Object
+const caar = {type:"fait", model:"400", color:"white" };
+caar.color = "red"; // change color
+caar.onwer = "poonam"; // add somthing
+document.getElementById("demo10").innerHTML = "car onwer is  " + caar.onwer;
 
 
- bikeName = "fz";
- document.getElementById("demo11").innerHTML = bikeName ;
+// hoisting
+bikeName = "fz";
+var bikeName;
+document.getElementById("demo11").innerHTML = bikeName;
 
- var bikeName;
-// arithmentc operator
 
- var b = 10,  c= 9;
- b += 5;
- c -= 4;
- document.getElementById("demo12").innerHTML = b + "and" + c;
-// concatinate
- let test1 = "what a very nice";
-  test1 += " day.";
-  document.getElementById("demo13").innerHTML = test1 ;
+// Arithmetic Operator
+var b = 10,  c= 9;
+b += 5;
+c -= 4;
+document.getElementById("demo12").innerHTML = b + "and" + c;
+
+
+// concatinate to variable 
+let test1 = "what a very nice";
+test1 += " day.";
+document.getElementById("demo13").innerHTML = test1;
   
-  let a2 = 22;
-  let a1 = 31;
-  //a1++;
-  let $  = a2 += a1;
-  $++;
-    document.getElementById("demo14").innerHTML = $ ;
 
-    // function create
+// Increment Oprator
+let a2 = 22;
+let a1 = 31;
+let $  = a2 += a1;
+$++;
+document.getElementById("demo14").innerHTML = $;
 
-  let o= myfunction(3,4);
-  document.getElementById("demo15").innerHTML = o;
-    function  myfunction(a,b){
-    return a*b
-  }
-  // celsius
-   function tocelsius(fahrenheit){
-    return (5/9) * (fahrenheit-32);
-   }
 
-   let value = tocelsius(80);
-   document.getElementById("demo16").innerHTML = value ;
+// function create
+let temprature= myfunction(3,4);
+document.getElementById("demo15").innerHTML = temprature;
+function  myfunction(a,b){
+  return a*b
+}
 
-   // function as a variable
-    let text = "the temperature is " + tocelsius(77) + " ceslsius";
-    
-    function tocelsius(f){
-      return (5/9) * (f-32);
-    }
 
-    document.getElementById("demo17").innerHTML = text;
+// celsius
+let value = tocelsius(80);
+function tocelsius(fahrenheit){
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo16").innerHTML = value;
+
+   
+//  Object
