@@ -92,25 +92,38 @@ document.getElementById("demo16").innerHTML = value;
 
    
 //  Object
- const person = {
+const person = {
   firstName1: "john",
   lastName1: "deo",
   age: 33
- };
- document.getElementById("demo17").innerHTML = person.firstName1 + " is " + person.age + " year old. "
+};
+document.getElementById("demo17").innerHTML = person.firstName1 + " is " + person.age + " year old. "
 
- 
- //store properties in function
- const persn = {
+
+//store properties in function
+const persn = {
   firstName2: "jummy",
   lastName2: "mart",
   agee: 22,
   fullName: function() {
     return this.firstName2 + " " + this.lastName2;
   }
- };
- document.getElementById("demo18").innerHTML = persn.fullName();
+};
+document.getElementById("demo18").innerHTML = persn.fullName();
 
 
+//use button in function
+function displayDate(){
+  document.getElementById("demo20").innerHTML = Date();
+};
+
+
+ //use templete
+ let text21 = `he's often call "jummy."`;
+ document.getElementById("demo21").innerHTML = text21 + " and the text lenght is " + text21.length;
  
+
+
+
+
  
