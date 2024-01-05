@@ -114,14 +114,14 @@ document.getElementById("demo18").innerHTML = persn.fullName();
 
 //use button in function
 function displayDate(){
-  document.getElementById("demo20").innerHTML = Date();
-};
+document.getElementById("demo20").innerHTML = Date();
+}
 
 
- //use templete
- let text21 = `he's often call "jummy."`;
- document.getElementById("demo21").innerHTML = text21 + " and the text lenght is " + text21.length;
- 
+//use templete
+let text21 = `he's often call "jummy."`;
+document.getElementById("demo21").innerHTML = text21 + " and the text lenght is " + text21.length;
+
 
 // string method
 var text22 = "i am not boy."
@@ -135,4 +135,22 @@ let part1 = text23.slice(13);
 document.getElementById("demo23").innerHTML = part + "<br> from position 13:" + part1;
 
 
- 
+
+//use replace string
+function mmyfunction(){
+  let test24 = document.getElementById("demo24").innerHTML;  
+  document.getElementById("demo24").innerHTML = test24.replace("tcs","microsoft"); 
+};
+
+
+//string serach method
+let text25 = "plz locate 'locate' is:"
+let index = text25.indexOf("locate");
+document.getElementById("demo25").innerHTML = index;
+
+let text26 = "plz locate 'locate' is:" 
+let index1 = text25.search("plz");
+document.getElementById("demo26").innerHTML = index1;
+
+let tet27 ="Hello world, welcome to the universe.";
+document.getElementById("demo27").innerHTML = tet27.startsWith("Hello") + " and " + tet27.endsWith("universe");
