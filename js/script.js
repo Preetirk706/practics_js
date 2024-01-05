@@ -123,7 +123,16 @@ function displayDate(){
  document.getElementById("demo21").innerHTML = text21 + " and the text lenght is " + text21.length;
  
 
+// string method
+var text22 = "i am not boy."
+var part22 = text22.slice(-6);
+document.getElementById("demo22").innerHTML = text22.charAt(2) + " code of charecter:<br> " + text22.charCodeAt(3) 
++ " <br>from the end of string :" + part22;
 
+let text23 = "banana, kiwi, lemon, mango";
+let part = text23.slice(8,12);
+let part1 = text23.slice(13);
+document.getElementById("demo23").innerHTML = part + "<br> from position 13:" + part1;
 
 
  
